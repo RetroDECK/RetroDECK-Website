@@ -1,11 +1,11 @@
 .stack {
   position: relative;
   display: flex;
-  padding-right: 30px;
+  padding-right: 45px;
 }
 
 #features .row:nth-child(odd) .stack {
-  padding-right: 30px;
+  padding-right: 45px;
 }
 
 .screenshot {
@@ -20,13 +20,13 @@
 
 .screenshot:nth-child(2) {
   z-index: 3;
-  left: calc(-100% + 10px);
-  bottom: 10px;
+  left: calc(-100% + 15px);
+  bottom: 15px;
 }
 .screenshot:nth-child(1) {
   z-index: 2;
-  left: 20px;
-  bottom: 20px;
+  left: 30px;
+  bottom: 30px;
 }
 
 /* @keyframes lower {
@@ -54,7 +54,7 @@
 
 @keyframes shift {
   50% {
-    transform: translate(-5px, 5px);
+    transform: translate(-15px, 15px);
   }
   to {
     transform: translate(0, 0);
@@ -81,15 +81,15 @@ with different numbers of slides
 
 @keyframes fade-in {
   0% {
-    bottom: 30px;
-    left: 30px;
+    bottom: 45px;
+    left: 45px;
     opacity: 0;
     scale: 0.95;
   }
   100% {
     opacity: 1;
-    left: 20px;
-    bottom: 20px;
+    left: 30px;
+    bottom: 30px;
     scale: 1.0;
   }
 }

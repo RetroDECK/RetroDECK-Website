@@ -27,6 +27,10 @@ body {
     background: var(--rd-black);
 }
 
+p {
+    margin-bottom: 0.5rem;
+}
+
 /* Nav and Footer Styles */
 
 nav, footer {
@@ -121,9 +125,8 @@ p {
 }
 
 /* Alternating Color Styles */
-
 #features .row {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #features .row:nth-child(odd) .screenshot {
@@ -147,10 +150,6 @@ p {
 #features .row:nth-child(even) .feature-card {
     border: white 2px solid;
     background: var(--rd-purple);
-}
-
-#features .row:nth-child(even) h3 {
-    /* text-shadow: 2px 2px var(--rd-blue); */
 }
 
 /* Link Styles */
