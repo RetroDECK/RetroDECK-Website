@@ -29,29 +29,6 @@
   bottom: 30px;
 }
 
-/* @keyframes lower {
-  from {
-    animation-timing-function: ease-in-out;
-  }
-  to {
-    transform: translate(-10px, 10px);
-  }
-}
-
-@keyframes swap {
-  50% {
-    z-index: 3;
-  }
-  67% {
-    transform: translate(35px, -125%) rotate(2.5deg);
-    z-index: 1;
-  }
-  100% {
-    transform: translate(30px, -30px) rotate(0deg);
-    z-index: 0;
-  }
-} */
-
 @keyframes shift {
   50% {
     transform: translate(-15px, 15px);
