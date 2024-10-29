@@ -80,7 +80,6 @@ footer {
 
 /* Jumbotron Styles */
 .jumbotron {
-    background: linear-gradient(45deg, var(--rd-purple) 30%, var(--rd-blue));
     border: white 2px solid;
 }
 
@@ -94,6 +93,15 @@ p {
     font-family: var(--body-font);
     font-size: larger;
 }
+
+.gradient-1 {
+    background: var(--gradient-1) !important;
+}
+
+.gradient-2 {
+    background: var(--gradient-2) !important;
+}
+
 
 /* Features Styles */
 #features {
@@ -122,6 +130,10 @@ p {
 
 .feature-card p {
     font-family: var(--body-font);
+}
+
+#extra-features img {
+    max-height: 50px;
 }
 
 /* Alternating Color Styles */
