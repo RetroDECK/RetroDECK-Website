@@ -25,6 +25,7 @@
 
 body {
     background: var(--rd-black);
+    overflow-x: hidden;
 }
 
 p {
