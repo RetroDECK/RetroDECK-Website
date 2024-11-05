@@ -22,10 +22,13 @@
     --transition-speed: 0.1s;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     background: var(--rd-black);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 p {
