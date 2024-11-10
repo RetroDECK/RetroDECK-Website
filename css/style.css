@@ -44,7 +44,7 @@ nav, footer {
 
 nav {
     border-bottom: var(--rd-purple) solid 5px;
-    font-size: x-large;
+    font-size: large;
 }
 
 nav i.bi {
