@@ -93,8 +93,11 @@ footer {
     color: white;
 }
 
-p {
+p, small {
     font-family: var(--body-font);
+}
+
+p {
     font-size: larger;
 }
 
