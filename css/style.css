@@ -109,6 +109,15 @@ p {
     background: var(--gradient-2) !important;
 }
 
+.jumbotron .btn {
+    min-width: 75%;
+}
+
+.jumbotron .btn svg {
+    height: 3em;
+    aspect-ratio: 1.0;
+}
+
 
 /* Features Styles */
 #features {
