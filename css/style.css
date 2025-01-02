@@ -110,7 +110,8 @@ p {
 }
 
 .jumbotron .btn {
-    min-width: 75%;
+    min-width: 65%;
+    max-width: 75%;
 }
 
 .jumbotron .btn svg {
