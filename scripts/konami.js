@@ -22,6 +22,7 @@ window.addEventListener('keyup', function(e) {
         if (konamiCodePosition === konamiCode.length) {
             console.log('Konami Code Activated!');
             konamiCodePosition = 0;
+            window.open('emulator.html')
         }
     } else {
         konamiCodePosition = 0;
