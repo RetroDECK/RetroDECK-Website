@@ -1,5 +1,4 @@
+name = "retrodeck-website"
 pages_build_output_dir = "."
 
-[build]
-command = ""
 
