@@ -1,7 +1,10 @@
 // Blog Loader - Fetches the latest blog entry from the RetroDECK Wiki repo
 // and displays the preview on the homepage
 
+let didLoad = false
+
 async function findLatestBlogFile() {
+    if (!didLoad) {
     try {
         // Month names and their numbers
         const monthNames = [
@@ -48,6 +51,7 @@ async function findLatestBlogFile() {
                     if (response.ok) {
                         const fileData = await response.json();
                         console.log(`✅ Found: ${fileName}`);
+                        didLoad = true;
                         return {
                             name: fileName,
                             path: filePath,
@@ -68,6 +72,7 @@ async function findLatestBlogFile() {
     } catch (error) {
         console.error('Error finding latest blog file:', error);
         return null;
+    }
     }
 }
 
@@ -127,8 +132,7 @@ async function loadLatestBlogEntry() {
         if (!container) throw new Error('Blog container not found');
         
         container.innerHTML = `
-            <h3>Latest from the Blog</h3>
-            <h4><a href="${blogUrl}" target="_blank" rel="noopener noreferrer">${title}</a></h4>
+            <h3>${title}</h3>
             <div class="blog-preview">
                 ${html}
             </div>
@@ -140,7 +144,7 @@ async function loadLatestBlogEntry() {
         console.error('Error loading blog entry:', error);
         const container = document.getElementById('latest-blog-container');
         if (container) {
-            container.innerHTML = '<p class="text-danger">Unable to load latest blog entry. <a href="https://retrodeck.readthedocs.io/en/latest/blog/" target="_blank">View all blog posts</a></p>';
+            container.innerHTML = '<p>Unable to load latest blog entry.<br><a href="https://retrodeck.readthedocs.io/en/latest/blog/" target="_blank">View all blog posts</a></p>';
         }
     }
 }
