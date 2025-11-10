@@ -137,7 +137,7 @@ async function loadLatestBlogEntry() {
                 ${html}
             </div>
             <p><small>${date}${readTime ? ' • ' + readTime : ''}</small></p>
-            <a href="${blogUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm mt-2">Continue reading...</a>
+            <a href="${blogUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-dark mt-2">Continue reading...</a>
         `;
         
     } catch (error) {
