@@ -22,6 +22,74 @@
     --transition-speed: 0.1s;
 }
 
+/* Accessibility: Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--rd-purple);
+    color: white;
+    padding: 8px 16px;
+    z-index: 9999;
+    font-family: var(--body-font);
+    text-decoration: none;
+    border: none;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Accessibility: Visually hidden text for screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Accessibility: External link indicator */
+a[target="_blank"]::after {
+    content: " (opens in new tab)";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Accessible mode: readable font + reduced motion */
+.accessible-mode {
+    --pixel-font: "Source Sans 3", sans-serif;
+}
+
+.accessible-mode *, 
+.accessible-mode *::before, 
+.accessible-mode *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+}
+
 html, body {
     overflow-x: hidden !important;
 }
@@ -87,7 +155,7 @@ footer {
     border: white 2px solid;
 }
 
-.jumbotron h1,h2 {
+.jumbotron h1, .jumbotron h2 {
     font-family: var(--pixel-font);
     text-shadow: 2px 2px var(--rd-black);
     color: white;
@@ -128,6 +196,12 @@ p {
     transition: 0.25s;
 }
 
+#features > .row {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .feature-card {
     background: var(--rd-blue);
     border: white 2px solid;
@@ -137,6 +211,32 @@ p {
 
 .screenshot, .feature-card {
     border-radius: 5px;
+}
+
+/* Bootstrap carousel customization */
+.carousel {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--rd-purple);
+    opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+    background-color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .feature-card h3 {
