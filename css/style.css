@@ -161,7 +161,7 @@ footer {
     color: white;
 }
 
-p, small {
+p, small, ul {
     font-family: var(--body-font);
 }
 
