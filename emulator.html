@@ -37,17 +37,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container large">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/rd-icons/squircle-icon.svg" height="40">
+                <img src="assets/rd-icons/squircle-icon.svg" height="40" alt="RetroDECK home">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                             href="https://flathub.org/apps/details/net.retrodeck.retrodeck">Download</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="index.html#features">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener noreferrer"
@@ -155,7 +155,7 @@
                                         fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
                                         <path
                                             d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15" />
-                                    </svg></i>Cooker
+                                    </svg>Cooker
                                 </a>
                             </li>
                             <li>
@@ -174,8 +174,8 @@
                 </ul>
                 <span class="navbar-text form-check form-switch">
                     <input class="form-check-input" id="pixel-font-switch" type="checkbox" role="switch"
-                        id="reduceMotionSwitch" checked onchange="pixelFontToggle()">
-                    <label class="form-check-label" for="reduceMotionSwitch">Retro Fonts</label>
+                        checked onchange="pixelFontToggle()">
+                    <label class="form-check-label" for="pixel-font-switch">Retro Mode</label>
                 </span>
             </div>
         </div>
@@ -183,7 +183,7 @@
     <!-- End Navbar -->
 
     <!-- Main Content -->
-    <main class="container-fluid px-0 mt-4">
+    <main id="main-content" class="container-fluid px-0 mt-4">
         <div class="row">
             <div class="col" style="min-height:200px">
                 <div id="game"></div>

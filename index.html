@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>RetroDECK</title>
     <meta name="description"
-        content="RetroDECK is a polished and beginner-friendly environment for playing your retro games on Steam Deck, available with just one click from the Discover app.">
+        content="RetroDECK is a polished, beginner-friendly retro gaming platform for Linux systems, available with just one click from Flathub.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://retrodeck.net">
     <meta property="og:title" content="RetroDECK">
     <meta property="og:description"
-        content="RetroDECK is a polished and beginner-friendly environment for playing your retro games on Steam Deck, available with just one click from the Discover app.">
+        content="RetroDECK is a polished, beginner-friendly retro gaming platform for Linux systems, available with just one click from Flathub.">
     <meta property="og:image" content="https://retrodeck.net/assets/og-image.png">
     <meta property="og:type" content="website" />
     <meta property="og:logo" content="https://retrodeck.net/assets/rd-icons/icon_circle_4_512x512.png" />
@@ -23,7 +23,7 @@
     <meta property="twitter:url" content="https://retrodeck.net">
     <meta name="twitter:title" content="RetroDECK">
     <meta name="twitter:description"
-        content="RetroDECK is a polished and beginner-friendly environment for playing your retro games on Steam Deck, available with just one click from the Discover app.">
+        content="RetroDECK is a polished, beginner-friendly retro gaming platform for Linux systems, available with just one click from Flathub.">
     <meta name="twitter:image" content="https://retrodeck.net/assets/og-image.png">
 
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/rd-icons/icon_circle_2_180x180.png">
@@ -37,17 +37,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container large">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/rd-icons/squircle-icon.svg" height="40">
+                <img src="assets/rd-icons/squircle-icon.svg" height="40" alt="RetroDECK home">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,6 +138,11 @@
                                         <title>Revolt.chat</title>
                                         <path
                                             d="M17.005 7.796c0 1.88-1.023 3.009-3.207 3.009h-3.615v-5.95H13.8c2.183 0 3.206 1.162 3.206 2.94zM.853 0l3.5 4.866v19.133h5.832v-9.06h1.398L16.563 24h6.583l-5.525-9.504a6.966 6.966 0 0 0 3.879-2.532 7 7 0 0 0 1.44-4.408C22.94 3.384 20.009 0 14.143 0h-9.79z" />
+                                    <svg role="img" height="1rem" class="pe-2" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Revolt.chat</title>
+                                        <path
+                                            d="M17.005 7.796c0 1.88-1.023 3.009-3.207 3.009h-3.615v-5.95H13.8c2.183 0 3.206 1.162 3.206 2.94zM.853 0l3.5 4.866v19.133h5.832v-9.06h1.398L16.563 24h6.583l-5.525-9.504a6.966 6.966 0 0 0 3.879-2.532 7 7 0 0 0 1.44-4.408C22.94 3.384 20.009 0 14.143 0h-9.79z" />
                                     </svg>Revolt
                                 </a>
                             </li>
@@ -166,7 +171,7 @@
                                         fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
                                         <path
                                             d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15" />
-                                    </svg></i>Cooker
+                                    </svg>Cooker
                                 </a>
                             </li>
                             <li>
@@ -184,9 +189,9 @@
                     </li>
                 </ul>
                 <span class="navbar-text form-check form-switch">
-                    <input class="form-check-input" id="pixel-font-switch" type="checkbox" role="switch"
-                        id="reduceMotionSwitch" checked onchange="pixelFontToggle()">
-                    <label class="form-check-label" for="reduceMotionSwitch">Retro Fonts</label>
+                    <input class="form-check-input" id="pixel-font-switch" type="checkbox" role="switch" checked
+                        onchange="pixelFontToggle()">
+                    <label class="form-check-label" for="pixel-font-switch">Retro Mode</label>
                 </span>
             </div>
         </div>
@@ -194,12 +199,13 @@
     <!-- End Navbar -->
 
     <!-- Main Content -->
-    <main class="container-fluid px-0 mt-4">
+    <main id="main-content" class="container-fluid px-0 mt-4">
 
         <div class="container mb-4">
             <div class="row">
                 <div class="col-12">
-                    <img class="img-fluid" src="assets/screens/logo-on-steamdeck.png" />
+                    <img class="img-fluid" src="assets/screens/logo-on-steamdeck.png"
+                        alt="RetroDECK logo displayed on a Steam Deck" />
                 </div>
             </div>
         </div>
@@ -211,18 +217,33 @@
                     <!-- First section -->
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h1 class="display-md-5 jumbo-header">All-in-One Retro Gaming Platform for Steam Deck and
-                                Linux</h1>
+                            <h1 class="display-md-5 jumbo-header">All-in-One Retro Gaming Platform for Linux</h1>
                             <p class="fs-md-4">
-                                Powered by <a target="_blank" rel="noopener noreferrer"
-                                    href="https://es-de.org/">ES-DE</a> and third party components such as tools and
-                                emulators,
-                                RetroDECK combines all of your gaming needs into a single package.
-                                Pair that with a best-in-class Steam Deck controller configuration, and you'll be in
-                                retro
-                                gaming
-                                paradise.
+                                RetroDECK is a powerful all-in-one retro gaming platform for handheld Linux gaming PCs
+                                like the Steam Deck, full Linux desktops, Linux HTPC setups, and Linux-based PC consoles
+                                such as the Steam Machine. Powered by <a href="https://es-de.org/" target="_blank"
+                                    rel="noopener noreferrer">ES-DE</a> and components such as:
                             </p>
+                            <div class="row">
+                                <div class="col">
+                                    <ul>
+                                        <li>Clients</li>
+                                        <li>Emulators</li>
+                                        <li>Engines</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li>Multi-emulators</li>
+                                        <li>Ports</li>
+                                        <li>Systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="fs-md-4">
+                                RetroDECK brings all your retro gaming needs into a single platform.
+                            </p>
+
                         </div>
 
                         <!-- Flathub Link -->
@@ -261,17 +282,15 @@
                     <!-- Second Section -->
                     <div class="row align-items-center">
                         <div class="col">
-                            <h2 class="display-md-5 jumbo-header">No need to configure the systems</h2>
+                            <h2 class="display-md-5 jumbo-header">No need to configure the components</h2>
                             <h2 class="display-md-5 jumbo-header">(But you can if you want)</h2>
                         </div>
                     </div>
 
-                    <div class="row"></div>
                     <p class="fs-md-4">
-                        With RetroDECK, everything has been pre-configured for optimal performance and quality.
-                        If you want to dig deeper, you can tinker with common emulator settings in the RetroDECK
-                        Configurator.
-                        And don’t worry – you can always reset with a single click.
+                        RetroDECK comes pre-configured for optimal performance and quality, but advanced users are free
+                        to tweak and experiment with component settings using the RetroDECK Configurator or their own
+                        tinkering methods. If anything goes wrong, you can reset everything with a single click.
                     </p>
                 </div>
 
@@ -285,32 +304,26 @@
         <div class="container px-2">
             <div class="p-2 mb-4 bg-body-tertiary rounded-3 jumbotron gradient-1">
                 <div class="container-fluid align-items-center">
-                    <!-- First section -->
                     <div class="row align-items-center">
-                        <h2 class="display-md-5 jumbo-header">Check out the blog!</h2>
+                        <h2 class="display-md-5 jumbo-header">Latest from the Blog</h2>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <p>Our amazing team posts a monthly update on the RetroDECK blog. Check it out 
-                            if you want to stay up to date with our development.</p>
+                            <h4 class="mb-2" style="color: white;">January 2026: The Aftermath</h4>
+                            <p><small><em>January 27, 2026</em></small></p>
+                            <p>The RetroDECK team was excited to finally release our big rework! But with every big update, there is a big list of patches. Our team is hard at work issuing bug fixes, so be sure to update RetroDECK when you see one available.</p>
+                            <p>
+                                If you have feedback or bug reports, please let us know on Github or Discord!
+                            </p>
                         </div>
                         <div class="col-md-4 text-center">
                             <a type="button" class="btn btn-dark align-center p-2" target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://retrodeck.readthedocs.io/en/latest/blog/">
-                                <div class="row align-items-center">
-                                    <div class="col-4">
-                                        <svg height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#946beb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                                        
-                                    </div>
-                                    <div class="col-8 text-center">Read More</div>
-                                </div>
+                                href="https://retrodeck.readthedocs.io/en/latest/blog/2026/01/27/january-2026-starts-with-a-bang/">
+                                Read More
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -338,37 +351,87 @@
 
             <!-- Screenshots -->
             <div class="row align-items-center mt-3 mb-3">
-                <div class="col-12 col-lg-8 stack">
-                    <img src="assets/screens/screen01.png" class="img-fluid screenshot"
-                        alt="The RetroDECK and ES-DE logos on a black screen" />
-                    <img src="assets/screens/screen02.png" class="img-fluid screenshot"
-                        alt="A RetroDECK icon on the Steam Library page." />
+                <div class="col-12 col-lg-8">
+                    <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Screenshot 1"></button>
+                            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"
+                                aria-label="Screenshot 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/screens/screen01.png" class="d-block w-100 screenshot"
+                                    alt="The RetroDECK and ES-DE logos on a black screen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/screens/screen02.png" class="d-block w-100 screenshot"
+                                    alt="A RetroDECK icon on the Steam Library page.">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="feature-card p-2 mt-2 mt-lg-0">
-                        <h3>Designed for Gaming Mode</h3>
-                        <p>RetroDECK fits right in with the other games in your Steam library.</p>
+                        <h3>RetroDECK Configurator</h3>
+                        <p>Use the <em>RetroDECK Configurator</em>, a multi-tool settings
+                            utility accessible from the ES-DE main menu, to manage system configurations
+                            from a single interface.
+                            It includes tools to fix issues, compress files, enable presets, organize
+                            folders, validate BIOS, and more.</p>
                     </div>
                 </div>
             </div>
 
             <div class="row align-items-center mb-3">
 
-                <div class="col-12 col-lg-8 order-lg-2 stack">
-                    <img src="assets/screens/screen03.png" class="img-fluid screenshot"
-                        alt="The RetroDECK custom ES-DE theme showing various emulation engine options." />
-                    <img src="assets/screens/screen04.png" class="img-fluid screenshot"
-                        alt="The RetroDECK custom ES-DE theme showing various game options." />
+                <div class="col-12 col-lg-8 order-lg-2">
+                    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Screenshot 1"></button>
+                            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1"
+                                aria-label="Screenshot 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/screens/screen03.png" class="d-block w-100 screenshot"
+                                    alt="The RetroDECK custom ES-DE theme showing various emulation engine options.">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/screens/screen04.png" class="d-block w-100 screenshot"
+                                    alt="The RetroDECK custom ES-DE theme showing various game options.">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="col-12 col-lg-4 order-lg-1">
                     <div class="feature-card p-2 mt-2 mt-lg-0">
-                        <h3>Custom ES-DE Theme</h3>
-                        <p>RetroDECK includes a custom ES-DE theme with pixel text and retro vibes.
-                            But you can choose any ES-DE theme in the settings menu.</p>
-                        <small>Available starting with v0.9b. You can find it in the <a
-                                href="https://github.com/RetroDECK/Cooker" target="_blank"
-                                rel="noopener noreferrer">Cooker</a> builds!</small>
+                        <h3>ES-DE Theme</h3>
+                        <p>
+                            RetroDECK ships with a custom ES-DE theme featuring pixel text and retro style.
+                        </p>
                     </div>
                 </div>
 
@@ -379,17 +442,20 @@
             <div class="row mb-3 py-0" id="extra-features">
                 <div class="col-12">
                     <div class="feature-card p-2 mt-2 mt-lg-0 gradient-1">
-                        <h3>And so much more!</h3>
+                        <h3>Several Features</h3>
 
                         <!-- Extra Features Row 1 -->
                         <div class="row py-0 align-items-center">
                             <div class="col-md-4">
                                 <div class="row py-0 align-items-center">
                                     <div class="col-3 text-center">
-                                        <img class="img-fluid" src="assets/feature-icons/lock_open.png">
+                                        <img class="img-fluid" src="assets/feature-icons/card_place.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Enable cheats in all supported emulators.</p>
+                                        <p>Distributed as a sandboxed Flatpak, RetroDECK keeps all
+                                            important files together for easy installation, usage, and
+                                            cleanup.
+                                        <p>
                                     </div>
                                 </div>
                             </div>
@@ -397,11 +463,26 @@
                             <div class="col-md-4">
                                 <div class="row py-0 align-items-center">
                                     <div class="col-3 text-center">
-                                        <img class="img-fluid" src="assets/feature-icons/card_place.png">
+                                        <img class="img-fluid" src="assets/feature-icons/structure_house.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Use the ES-DE frontend to automatically download screenshots, videos, manuals
-                                            and metadata for your library.</p>
+                                        <p>
+                                            RetroDECK organizes user content into dedicated folders for easy access,
+                                            including:
+                                            BIOS,
+                                            Borders,
+                                            Cheats,
+                                            Logs,
+                                            Mods,
+                                            ROMs,
+                                            Saves,
+                                            Screenshots,
+                                            Shaders,
+                                            States,
+                                            Storage,
+                                            Texture Packs,
+                                            Videos, and more.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -412,8 +493,8 @@
                                         <img class="img-fluid" src="assets/feature-icons/award.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Connect with RetroAchievements and get credit for all of your amazing
-                                            accomplishments.</p>
+                                        <p> Connect with <em>RetroAchievements</em> to earn recognition for all
+                                            your amazing accomplishments in supported components.</p>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +509,8 @@
                                         <img class="img-fluid" src="assets/feature-icons/flask_half.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Easily install on other Linux distributions.</p>
+                                        <p>Seamlessly integrate your favorite titles into your Steam library
+                                            via built-in SRM and ES-DE favorites integration.</p>
                                     </div>
                                 </div>
                             </div>
@@ -439,8 +521,9 @@
                                         <img class="img-fluid" src="assets/feature-icons/spinner.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Use the custom controller template for quick access to emulator settings with
-                                            the touchpad.</p>
+                                        <p>Apply advanced Steam Input controller templates tailored for
+                                            Steam Deck and many external controllers.
+                                        <p>
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +531,16 @@
                             <div class="col-md-4">
                                 <div class="row py-0 align-items-center">
                                     <div class="col-3 text-center">
-                                        <img class="img-fluid" src="assets/feature-icons/pawns.png">
+                                        <img class="img-fluid" src="assets/feature-icons/crown_a.png">
                                     </div>
                                     <div class="col-9">
-                                        <p>Play online with supported emulators.</p>
+                                        <p>
+                                            Engines like <strong>UZDOOM</strong> and <strong>OpenBOR</strong> use
+                                            custom wrappers to simplify launching and support seamless mod integration.
+                                            Meanwhile, a system like <strong>PortMaster</strong> let you download
+                                            hundreds of ports from an ever-growing list to play on your device.
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -474,9 +563,8 @@
                         <div class="col-md-8">
                             <h2 class="display-md-5 jumbo-header">We can't do this alone!</h2>
                             <p class="fs-md-4">
-                                RetroDECK is run by volunteers.
-                                If you appreciate our work, please consider code contribution or donating to us or our
-                                sibling projects.
+                                RetroDECK is volunteer-run. If you appreciate our work, consider contributing
+                                or supporting RetroDECK or similar projects through donations.
                             </p>
                         </div>
 
@@ -484,7 +572,7 @@
                         <div class="col-md-4 text-center">
                             <a type="button" class="btn btn-dark align-center p-2" target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://retrodeck.readthedocs.io/en/latest/wiki_about/contibute-retrodeck/">
+                                href="https://retrodeck.readthedocs.io/en/latest/wiki_credits_social/donations-licenses/">
                                 <div class="row align-items-center">
                                     <div class="col-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="#946beb"
@@ -517,7 +605,7 @@
             <div class="col">
                 <div class="text-center">
                     Created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/jiannazzone">Adam
-                        Iannazzone</a> and the RetroDECK team.
+                        Iannazzone</a> and the rest of the RetroDECK Team.
                 </div>
             </div>
         </div>
@@ -536,7 +624,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/accessibility.js"></script>
-    <script src="scripts/carousel.js"></script>
     <script src="scripts/konami.js"></script>
     <script src="scripts/blog-loader.js"></script>
 </body>
